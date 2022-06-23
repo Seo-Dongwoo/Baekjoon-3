@@ -6,7 +6,6 @@ dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
 def dfs(x, y, h):
-
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
