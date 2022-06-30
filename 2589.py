@@ -21,7 +21,9 @@ def bfs(i,j):
       ny=y+dy[i]
       if nx<0 or nx>=n or ny<0 or ny>=m:
         continue
+        # 땅이면서, 방문하지 않았다면
       elif maps[nx][ny]=='L' and visited[nx][ny]==0:
+        # 방문 처리
         visited[nx][ny]=visited[x][y]+1
         cnt=max(cnt,visited[nx][ny])
         queue.append((nx,ny))
