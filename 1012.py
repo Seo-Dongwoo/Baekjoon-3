@@ -23,7 +23,7 @@ for _ in range(T):
         matrix[n][m] = 1
 
     for i in range(N):
-        for j in range(M): 
+        for j in range(M):
             if matrix[i][j] > 0:
                 dfs(i, j)
                 bug += 1
