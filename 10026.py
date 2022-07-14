@@ -21,6 +21,7 @@ def bfs(x,y):
 N = int(input())
 graph = [list(map(str, input())) for _ in range(N)]
 visited = [[0]*N for _ in range(N)]
+# 적록색약이 없는 경우
 cnt = 0
 for i in range(N):
     for j in range(N):
@@ -29,6 +30,7 @@ for i in range(N):
             cnt += 1
 print(cnt, end=' ')
 
+# 적록색약이 있을 경우
 for i in range(N):
     for j in range(N):
         if graph[i][j] == "R":
