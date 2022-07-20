@@ -3,6 +3,7 @@ def bfs(N):
     visited = [0]*100001
     queue = deque()
     queue.append(N)
+
     while queue:
         x = queue.popleft()
         if x == K:
