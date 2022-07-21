@@ -2,10 +2,10 @@ from collections import deque
 
 n, m = map(int, input().split())
 graph = [list(map(int, input().split())) for _ in range(n)]
-
-visited = [[False] * m for _ in range(n)]
 dx = [0, 0, -1, 1]
 dy = [-1, 1, 0, 0]
+visited = [[False] * m for _ in range(n)]
+
 
 def bfs(x,y,count):
     queue = deque()
