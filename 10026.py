@@ -3,6 +3,7 @@ import sys
 input = sys.stdin.readline
 dx = [1,-1,0,0]
 dy = [0,0,1,-1]
+N = int(input())
 
 def bfs(x,y):
     queue = deque()
@@ -18,7 +19,7 @@ def bfs(x,y):
                     queue.append((nx,ny))
                     visited[nx][ny] = 1
                     
-N = int(input())
+
 graph = [list(map(str, input())) for _ in range(N)]
 visited = [[0]*N for _ in range(N)]
 # 적록색약이 없는 경우
