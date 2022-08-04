@@ -30,5 +30,6 @@ for _ in range(E):
     graph[u].append((w,v))
 
 Dijkstra(K)
+
 for i in range(1, V+1):
     print("INF" if dp[i] == INF else dp[i])
