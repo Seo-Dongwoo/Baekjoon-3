@@ -5,8 +5,8 @@ graph = [[] for _ in range(N+1)]
 
 for _ in range(N-1):
     a, b, c = (map(int, sys.stdin.readline().split()))
-    graph[a].append((b, c))
-    graph[b].append((a, c))
+    graph[a].append((b,c))
+    graph[b].append((a,c))
 
 for i in range(Q):
     k, v = map(int, sys.stdin.readline().split())
