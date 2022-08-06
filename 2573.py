@@ -47,6 +47,7 @@ while True:
         check = True
         break
     day += 1
+
 if check:
     print(day)
 else:
