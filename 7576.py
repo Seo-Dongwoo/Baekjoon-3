@@ -23,6 +23,7 @@ def bfs():
                 queue.append((nx,ny))
 
 bfs()
+
 for i in graph:
     for j in i:
         if j == 0:
